@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CRUD operation
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form class="login-wrapper" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This
+                            field is required.</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>EMP Id*</label><label class="validation-error hide" id="empIdValidationError"> This
+                            field is required.</label>
+                        <input type="text" name="empId" id="empId">
+                    </div>
+                    <div>
+                        <label>Salary*</label><label class="validation-error hide" id="salaryValidationError">This
+                            field is required.</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>Age*</label><label class="validation-error hide" id="AgeValidationError">This
+                            field is required.</label>
+                        <input type="text" name="Age" id="Age">
+                    </div>
+
+                    <!-- <div>
+                        <label>Select Gender*</label><label class="validation-error hide" id="genderValidationError">This
+                            field is required.</label>
+                        <br>
+                        <input name="gender" id="gender" type="radio" value="male" /> Male
+
+                        <input name="gender" id="gender" type="radio" value="female" /> Female
+                    </div> -->
+
+                        <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <div>
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>EMP Id</th>
+                                <th>Salary</th>
+                                <th>Age</th>
+                                <!-- <th>Gender</th> -->
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+
+</html>
